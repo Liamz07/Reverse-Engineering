@@ -161,8 +161,7 @@ else
 Điều kiện đầu trong mã Ghidra:
 
 ```c
-(-1 < strcmp(input, "__dso_handle")) &&
-(strcmp(input, "__dso_handle") < 1)
+(-1 < strcmp(input, "__dso_handle")) && (strcmp(input, "__dso_handle") < 1)
 ```
 
 tương đương chính xác với `strcmp(...) == 0`. Đây chỉ là một nhánh chặn chuỗi `__dso_handle`; nó không phải đáp án.
